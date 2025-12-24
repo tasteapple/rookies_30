@@ -1,0 +1,5 @@
+id
+name
+pw
+sex
+phone number
