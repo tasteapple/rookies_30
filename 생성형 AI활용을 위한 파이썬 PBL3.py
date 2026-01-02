@@ -48,7 +48,8 @@ def start_monitoring(file_before):
             added_files = now_files - file_before # 새로 추가된 파일 탐지
 
             if added_files:
-                print("\n="*20)
+                print()
+                print("="*20)
                 print("file changed!")
                 print(f"before: {file_before}")
                 print(f"now: {now_files}")
@@ -101,3 +102,4 @@ def scan_sensitive_info(content):
 
 file_before = check_directory()
 start_monitoring(file_before)
+
